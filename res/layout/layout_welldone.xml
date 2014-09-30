@@ -1,0 +1,272 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:id="@+id/LinearLayout1"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:weightSum="1" tools:context=".MainActivity"
+	android:background="@drawable/background">
+	<LinearLayout android:id="@+id/LinearLayout2"
+		android:layout_width="match_parent" android:layout_weight="0.1"
+		android:background="@drawable/backgroundchoosetrait"
+		android:layout_height="0dp" android:gravity="center_vertical">
+
+		<LinearLayout
+		    android:id="@+id/ww1"
+		    android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="0.3" android:paddingBottom="5dp" android:paddingLeft="5dp" android:paddingTop="5dp">
+		    <Button android:id="@+id/btn_back" android:layout_height="wrap_content"
+	android:background="@drawable/back_new" android:layout_width="wrap_content" />
+		</LinearLayout>
+
+		<LinearLayout
+		    android:id="@+id/ww2"
+		    android:layout_height="wrap_content" android:layout_weight="0.4" android:layout_width="0dp" android:gravity="center_vertical|center_horizontal" android:layout_gravity="center_vertical">
+		    <TextView
+    		android:id="@+id/textView1" 
+    		android:layout_width="wrap_content"
+    			android:layout_height="wrap_content" 
+    			android:text="PROFILE ME"
+    			android:textColor="#000000" 
+    			android:textSize="@dimen/title_normal" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/linearLayout3" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="0.3" android:layout_width="0dp"></LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_height="0dp"
+		android:layout_width="fill_parent" android:gravity="center_horizontal"
+		android:layout_weight="0.2">
+
+		<LinearLayout android:id="@+id/ll" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:gravity="center">
+			<ImageView android:id="@+id/imageView1" android:background="@drawable/iconweldone"
+				android:layout_height="wrap_content" android:layout_width="wrap_content" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="0dp" android:orientation="vertical" android:weightSum="1" android:gravity="center_vertical|center_horizontal" android:layout_weight="0.15" android:paddingLeft="10dp" android:paddingRight="10dp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView2"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:gravity="top" android:text="WELLDONE!!"></TextView>
+		<TextView
+			android:text="Thanks for using the Profile Me App, here is your report to share with your friends and family. Try it out to profile your friends and family"
+			android:id="@+id/textView7" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:textSize="12dp">
+
+		</TextView>
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="0dp" android:orientation="vertical" android:gravity="center" android:layout_weight="0.05">
+
+		<TextView android:id="@+id/textView3" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Here is your report..." android:textSize="15dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="0dp" android:orientation="vertical"
+		android:paddingLeft="10dp" android:paddingRight="10dp"
+		android:layout_weight="0.3">
+		<ScrollView android:layout_height="match_parent"
+			android:layout_width="match_parent" android:id="@+id/scrollView1">
+			<LinearLayout android:id="@+id/linearLayout2"
+				android:layout_width="match_parent" android:layout_height="match_parent"
+				android:weightSum="0.7" android:orientation="vertical">
+				<LinearLayout android:id="@+id/linearLayout3"
+					android:orientation="vertical" android:weightSum="1"
+					android:layout_width="match_parent" android:layout_height="0dp"
+					android:layout_weight="0.1">
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout10" android:orientation="vertical"
+						android:layout_height="0dp" android:layout_weight="0.3"
+						android:padding="5dp">
+						<TextView android:id="@+id/textView4"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="CONFIDENCE" android:textSize="15dp"></TextView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout11" android:orientation="vertical"
+						android:layout_height="0dp" android:layout_weight="0.7"
+						android:padding="5dp">
+						<TextView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:id="@+id/tt_one"
+							android:text="TextView" android:textSize="12dp"></TextView>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linearLayout4"
+					android:orientation="vertical" android:weightSum="1"
+					android:layout_width="match_parent" android:layout_weight="0.1"
+					android:layout_height="0dp">
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout10" android:orientation="vertical"
+						android:layout_weight="0.3" android:layout_height="0dp"
+						android:padding="5dp">
+						<TextView android:id="@+id/textView14"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="FRIENDLINESS" android:textSize="15dp"></TextView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout11" android:orientation="vertical"
+						android:layout_height="0dp" android:layout_weight="0.3"
+						android:padding="5dp">
+						<TextView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:id="@+id/tt_two"
+							android:text="TextView" android:textSize="12dp"></TextView>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linearLayout5"
+					android:orientation="vertical" android:weightSum="1"
+					android:layout_height="0dp" android:layout_weight="0.1"
+					android:layout_width="match_parent">
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout10" android:orientation="vertical"
+						android:layout_height="0dp" android:layout_weight="0.3"
+						android:padding="5dp">
+						<TextView android:id="@+id/textView12"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:textSize="15dp" android:text="TOLERANCE"></TextView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout11" android:orientation="vertical"
+						android:layout_weight="0.7" android:layout_height="0dp"
+						android:padding="5dp">
+						<TextView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:text="TextView"
+							android:id="@+id/tt_three" android:textSize="12dp"></TextView>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linearLayout6"
+					android:orientation="vertical" android:weightSum="1"
+					android:layout_height="0dp" android:layout_weight="0.1"
+					android:layout_width="match_parent">
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout10" android:orientation="vertical"
+						android:layout_height="0dp" android:layout_weight="0.3"
+						android:padding="5dp">
+						<TextView android:id="@+id/textView5"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:textSize="15dp" android:text="SENSE OF HUMOR"></TextView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout11" android:orientation="vertical"
+						android:layout_height="0dp" android:layout_weight="0.7"
+						android:padding="5dp">
+						<TextView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:text="TextView"
+							android:id="@+id/tt_four" android:textSize="12dp"></TextView>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linearLayout7"
+					android:orientation="vertical" android:weightSum="1"
+					android:layout_height="0dp" android:layout_weight="0.1"
+					android:layout_width="match_parent">
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout10" android:orientation="vertical"
+						android:layout_height="0dp" android:layout_weight="0.3"
+						android:padding="5dp">
+						<TextView android:id="@+id/textView10"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="GENEROSITY" android:textSize="15dp"></TextView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout11" android:orientation="vertical"
+						android:layout_weight="0.7" android:layout_height="0dp"
+						android:padding="5dp">
+						<TextView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:id="@+id/tt_five"
+							android:text="TextView" android:textSize="12dp"></TextView>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linearLayout8"
+					android:orientation="vertical" android:weightSum="1"
+					android:layout_height="0dp" android:layout_weight="0.1"
+					android:layout_width="match_parent">
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout10" android:orientation="vertical"
+						android:layout_height="0dp" android:layout_weight="0.3"
+						android:padding="5dp">
+						<TextView android:id="@+id/textView8"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="WORLD VIEW" android:textSize="15dp"></TextView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout11" android:orientation="vertical"
+						android:layout_height="0dp" android:layout_weight="0.7"
+						android:padding="5dp">
+						<TextView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:id="@+id/tt_six"
+							android:text="TextView" android:textSize="12dp"></TextView>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linearLayout9"
+					android:orientation="vertical" android:weightSum="1"
+					android:layout_width="match_parent" android:layout_height="0dp"
+					android:layout_weight="0.1">
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout10" android:orientation="vertical"
+						android:layout_height="0dp" android:layout_weight="0.3"
+						android:padding="5dp">
+						<TextView android:id="@+id/textView6"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="MAGNETISM" android:textSize="15dp"></TextView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout11" android:orientation="vertical"
+						android:layout_height="0dp" android:layout_weight="0.7"
+						android:padding="5dp">
+						<TextView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:text="TextView"
+							android:textSize="12dp" android:id="@+id/tt_seven"></TextView>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="0dp" android:orientation="horizontal"
+		android:paddingLeft="10dp" android:paddingRight="10dp"
+		android:weightSum="1" android:paddingBottom="5dp" android:paddingTop="5dp" android:layout_weight="0.1" android:gravity="right|center_vertical">
+
+		<Button android:layout_width="0dp" android:layout_height="wrap_content"
+			android:id="@+id/btn_share" android:background="@drawable/buttonshare"
+			android:layout_weight="0.2" android:layout_gravity="right|center_vertical"/>
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="0dp" android:layout_weight="0.1"
+		android:background="@drawable/bottommenubg">
+
+		<LinearLayout android:id="@+id/ll1" android:layout_width="0dp"
+			android:layout_height="match_parent" android:layout_weight="0.25">
+			<Button android:id="@+id/btn_welcome" android:layout_width="match_parent"
+				android:layout_height="match_parent" android:background="@drawable/bottommenuwelcome" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/ll1" android:layout_width="0dp"
+			android:layout_height="match_parent" android:layout_weight="0.25">
+			<Button android:id="@+id/btn_howItWork" android:layout_width="match_parent"
+				android:layout_height="match_parent" android:background="@drawable/bottommenuhowitworks" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/ll1" android:layout_width="0dp"
+			android:layout_height="match_parent" android:layout_weight="0.25">
+			<Button android:id="@+id/btn_tellAFriend"
+				android:layout_width="match_parent" android:layout_height="match_parent"
+				android:background="@drawable/bottommenutellafiend" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/ll1" android:layout_width="0dp"
+			android:layout_height="match_parent" android:layout_weight="0.25">
+			<Button android:id="@+id/btn_more" android:layout_width="match_parent"
+				android:layout_height="match_parent" android:background="@drawable/bottommenumore" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

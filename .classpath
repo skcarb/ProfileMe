@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="D:/workspace_profileme/ProfileMe/libs/signpost-commonshttp4-1.2.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/workspace_profileme/ProfileMe/libs/signpost-core-1.2.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/workspace_profileme/ProfileMe/libs/socialauth-4.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/workspace_profileme/ProfileMe/libs/socialauth-android-2.6.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

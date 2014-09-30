@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:id="@+id/LinearLayout1"
+	android:layout_width="match_parent" android:orientation="vertical"
+	android:weightSum="1" tools:context=".MainActivity" android:layout_height="200dp" android:background="#000000">
+
+		<LinearLayout android:layout_width="match_parent"
+			android:id="@+id/linearLayout2" 
+			android:orientation="vertical"
+			android:layout_height="0dp" 
+			android:background="@drawable/blue_gradient"
+			android:layout_weight="0.25" android:padding="10dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginTop="2dp">
+			<TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:text="Share Via :"></TextView>
+			</LinearLayout>
+		<Button android:id="@+id/button1"
+		android:layout_weight="0.25"
+			android:layout_width="match_parent" android:layout_height="0dp"
+			android:background="#ffffff" android:text="SOCIAL NETWORK" android:layout_marginLeft="2dp" android:layout_marginRight="2dp"></Button>
+		<Button android:id="@+id/button4"
+		android:layout_weight="0.25"
+			android:layout_width="match_parent" android:layout_height="0dp"
+			android:background="#ffffff" android:text="EMAIL" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginTop="2dp"></Button>
+		<Button android:id="@+id/button2" android:layout_height="0dp"
+			android:layout_width="match_parent" android:layout_weight="0.25" android:background="#ffffff" android:text="CANCLE" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp">
+			</Button>
+
+
+</LinearLayout>

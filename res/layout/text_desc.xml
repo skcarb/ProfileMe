@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:id="@+id/LinearLayout1"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:weightSum="1" tools:context=".MainActivity"
+	android:background="@drawable/background">
+
+	<RelativeLayout android:id="@+id/RelativeLayout1"
+		android:layout_width="match_parent" android:layout_weight="0.1"
+		android:background="@drawable/backgroundchoosetrait"
+		android:layout_gravity="center_vertical" android:paddingBottom="5dp"
+		android:paddingTop="5dp" android:paddingLeft="10dp"
+		android:layout_height="0dp">
+
+
+
+		<TextView android:layout_centerVertical="true" android:id="@+id/textView1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:text="PROFILE ME"
+			android:textColor="#000000" android:textSize="@dimen/title_normal" />
+
+	</RelativeLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="0dp" android:weightSum="1" android:orientation="vertical"
+		android:layout_weight="0.8">
+		<LinearLayout android:id="@+id/linearLayout2"
+			android:orientation="vertical" android:layout_height="0dp"
+			android:layout_width="match_parent" android:layout_weight="0.1"
+			android:layout_gravity="center">
+			<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:id="@+id/textView2" android:textSize="@dimen/text_normal"
+				android:text="TRAIT DESCRIPTION" android:layout_gravity="center"
+				android:layout_marginTop="10dp" android:gravity="center_vertical|center_horizontal"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_height="0dp"
+			android:layout_width="match_parent" android:orientation="vertical"
+			android:id="@+id/linearLayout3" android:layout_weight="0.9">
+			<ScrollView android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/scrollView1">
+				<LinearLayout android:id="@+id/linearLayout4"
+					android:layout_width="match_parent" android:layout_height="match_parent"
+					android:paddingLeft="20dp" android:paddingRight="20dp">
+					<TextView 
+						android:id="@+id/textView3" android:layout_width="match_parent"
+						android:textSize="@dimen/text_two_normal" android:layout_height="match_parent">
+					</TextView>
+				</LinearLayout>
+			</ScrollView>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_height="0dp"
+		android:gravity="center_vertical|center_horizontal"
+		android:layout_weight="0.1" android:layout_width="match_parent">
+		<Button android:id="@+id/btn_dismiss" android:layout_height="wrap_content"
+			android:background="@drawable/back" android:layout_gravity="center_vertical|center_horizontal"
+			android:layout_width="wrap_content"></Button>
+
+	</LinearLayout>
+
+</LinearLayout>
